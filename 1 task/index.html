@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    .container{
+        flex-flow: column nowrap;
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+
+    }
+    textarea{
+        color: rgb(0, 0, 0);
+    }
+    #inputInt{
+        
+        align-items: center;
+        justify-content: center;
+        margin-top: 140px;
+        width: 100%;
+        height: 500px;
+        
+        margin-bottom: 100px;
+    }
+    #button {
+        margin-top: 15px;
+        width: 250px;
+        height: 60px;
+        color: #ffff;
+        border: none;
+        background-color: rgb(255, 117, 117);
+        margin: 0 auto;
+        margin-top: 100px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    #button:hover{
+        background-color: rgba(255, 117, 117, 0.527);
+    }
+
+    .columns {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .columns .column {
+        width: 50%;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+        
+    }
+    .column.pairs {
+        
+        background-color: rgb(219, 11, 11);
+        color: white;
+    }
+    .column.pairs > p {
+        border-bottom: 1px solid white;
+    }
+    .column.notPairs{
+        background-color: rgba(51, 192, 58, 0.87);
+        color: white;
+        
+    }
+    .column.notPairs > p{
+        border-bottom: 1px solid white;
+    }
+</style>
+<body>
+   <div class="container" id="container">
+    <textarea name="inputInt" id="inputArr" cols="30" rows="10" placeholder="Введите данные"></textarea>
+    <button id="button">Click</button>
+   </div>
+    <script src="script.js"></script>
+    <div class="columns" id="columns"></div>
+</body>
+</html>
